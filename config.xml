@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.casualis"
+		version   = "1.1.0">
+		<name>Casualis Webs</name>
+		<description>Intranet</description>
+		<author href="http://www.casualiswebs.com" email="info@casualiswebs.com">
+Casualis Webs
+		</author>
+		<preference name="phonegap-version" value="3.6.3" />
+		<preference name="orientation" value="portrait" />
+		
+		<!--Retirar barra de arriba en IOS7-->
+		<gap:config-file platform="ios" parent="UIViewControllerBasedStatusBarAppearance">
+		<false/>
+		</gap:config-file>
+		<feature name="StatusBar">
+				<param name="ios-package" value="CDVStatusBar" onload="false" />
+		</feature>
+		
+		<preference name="fullscreen" value="true" />
+		<preference name="target-device" value="universal" />
+		<preference name="webviewbounce" value="false" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="stay-in-webview" value="false" />
+		<preference name="ios-statusbarstyle" value="default" />
+		<preference name="detect-data-types" value="true" />
+		<preference name="exit-on-suspend" value="false" />
+		<preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" />
+		<preference name="EnableViewportScale" value="false" />
+		<preference name="MediaPlaybackRequiresUserAction" value="false" />
+		<preference name="AllowInlineMediaPlayback" value="false" />
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="TopActivityIndicator" value="gray" />
+		<preference name="KeyboardDisplayRequiresUserAction" value="true" />
+		<preference name="HideKeyboardFormAccessoryBar" value="false" />
+		<preference name="SuppressesIncrementalRendering" value="false" />
+		<preference name="SplashScreenDelay" value="10000" />
+		<preference name="ErrorUrl" value=""/>
+		<preference name="BackgroundColor" value=""/>
+		<preference name="KeepRunning" value="true"/>
+		<preference name="DisallowOverscroll" value="true"/>
+		<preference name="LoadingDialog" value=","/> 
+		<preference name="LoadUrlTimeoutValue" value="50000" />
+		<preference name="disable-cursor" value="true" />
+		<gap:platform name="ios" />
+		<feature name="http://api.phonegap.com/1.0/geolocation"/>
+		<feature name="http://api.phonegap.com/1.0/network"/>
+		<feature name="http://api.phonegap.com/1.0/notification"/>
+		<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
+		<gap:plugin name="org.apache.cordova.device-motion"  />
+		<gap:plugin name="org.apache.cordova.device-orientation" />
+		<gap:plugin name="org.apache.cordova.file"  />
+		<gap:plugin name="org.apache.cordova.inappbrowser"  />
+		<gap:plugin name="org.apache.cordova.network-information"  />
+		<gap:plugin name="org.apache.cordova.splashscreen"  />
+		<gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+		<icon src="img/iconos/ios/icon.png" gap:platform="ios" width="57" height="57" />
+		<icon src="img/iconos/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
+		<icon src="img/iconos/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
+		<icon src="img/iconos/android/144.png" gap:platform="ios" width="144" height="144" />
+		<icon src="img/iconos/ios/icon_76.png" gap:platform="ios" width="76" height="76" />
+		<icon src="img/iconos/ios/icon_120.png" gap:platform="ios" width="120" height="120" />
+		<icon src="img/iconos/ios/icon_152.png" gap:platform="ios" width="152" height="152" />
+              <!-- iOS 7.0+ -->
+              <!-- iPhone / iPod Touch  -->
+              <icon src="res/ios/icon_60.png" gap:platform="ios" width="60" height="60" />
+              <!-- iPad -->
+              <icon src="res/ios/icon_76.png" gap:platform="ios" width="76" height="76" />
+              <icon src="res/ios/icon_155.png" gap:platform="ios" width="155" height="155" />
+              <!-- iOS 6.1 -->
+		<icon src="img/iconos/ios/icon.png" />
+		<gap:splash src="img/splash/ios/Default~iphone.png" gap:platform="ios" width="320" height="480" />
+		<gap:splash src="img/splash/ios/Default-568h@2x~iphone.png" gap:platform="ios" width="640" height="1136" />
+		<gap:splash src="img/splash/ios/Default-Landscape@2x~ipad.png" gap:platform="ios" width="1496" height="2048 " />
+		<gap:splash src="img/splash/ios/Default-Landscape~ipad.png" gap:platform="ios" width="1024" height="748" />
+		<gap:splash src="img/splash/ios/Default-Portrait@2x~ipad.png" gap:platform="ios" width="1536" height="2008" />
+		<gap:splash src="img/splash/ios/Default-Portrait~ipad.png" gap:platform="ios" width="768" height="1004" />
+		<gap:splash src="img/splash/ios/Default@2x~iphone.png" gap:platform="ios" width="640" height="960" />
+		
+		<gap:splash src="splash.9.png" />
+		<access origin="*.urbisclub.com" />
+		<access origin="https://www.casualiswebs.com/intranet" />
+		<access origin="*" />
+		<access origin="*.google.com" />
+		<access origin="*.googleapis.com" />
+		<access origin="*.gstatic.com" />
+		<access origin="*.twitter.com" />
+		<access origin="*.twitter.es" />
+		<gap:plugin name="com.phonegap.plugins.childbrowser" />
+		<gap:plugin name="de.appplant.cordova.plugin.local-notification"  />
+		<gap:plugin name="com.phonegap.plugin.statusbar"  />
+	</widget>
